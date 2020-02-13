@@ -115,3 +115,13 @@ Fom here, you can try:
 * Make the map fullscreen. Have a look at `fullscreen_leaflet.html` for an example
 * Make the fullscreen map edge to edge in the browser.  Have a look at `edge_to_edge_leaflet.html` for an example.  
 
+### Some Helpful Resources
+
+There are lots of grest reseources out there for learning Leaflet (or doing more than we've covered in this lab):
+
+* Leflet itself ahs some pretty good tutorials: [https://leafletjs.com/examples.html](https://leafletjs.com/examples.html)
+* Joshua Frazier's Leaflet tutorial (covers some of the same things we looked at, but goes a little further) [https://joshuafrazier.info/leaflet-basics/](https://joshuafrazier.info/leaflet-basics/)
+* [Leaflet Tutorial](https://maptimeboston.github.io/leaflet-intro/), written for Maptime Boston by Andy Woodruff and Ryan Mullins that gets into some more advanced techniques such as incorporating jQuery, external geojson files and the Leaflet.markercluster plugin into a project.
+* [Leaflet.JS Introduction](https://luxembourgjs.github.io/leaflet-demo/#/), by Thierry Nicola for JS Luxembourg.
+* [Leaflet provider map](https://leaflet-extras.github.io/leaflet-providers/preview/index.html), an open source Leaflet extension that contains configurations for various free tile providers.
+* [Mapbox Guides](https://docs.mapbox.com/help/) and [examples](https://docs.mapbox.com/mapbox.js/example/v1.0.0/) are great for learning about web maps in general in addition to Mapbox.js, which is built on top of Leaflet.
