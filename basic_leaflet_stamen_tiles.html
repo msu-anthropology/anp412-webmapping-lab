@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title>Simple Leaflet Map with Stamen Tiles for ANP412 Workshop</title>
+
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+  <style>
+
+
+    #mysupermap{ width: 900px; height: 500px; }
+  </style>
+</head>
+<body>
+
+  <!-- this section creates the container where the map will be displayed.  The size of the container is determined by the style above -->
+  <div id="mysupermap"></div>
+
+  <script>
+
+  // this section initiailizes the map.  Make sure the name of the map matches what you set above. setView determines where in the world the map will load.  Enter lat and long, as well as the initial zoom level.  A higher zoom level means it will be more zoomed in.
+var map = L.map('mysupermap').setView([29.977547, 31.132420], 12);
+
+// This section loads the map tiles from the specific provider into the containter you created
+  L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg', {
+
+// maxZoom determines how close you can zoom into the map.  The higher the number, the more you can zoom in
+		maxZoom: 18,
+//this section puts the attribution info for the tiles the map data in the bottom right hand corner of the map container
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		id: 'mapbox/streets-v11'
+	}).addTo(map);
+
+  </script>
+</body>
+</html>
