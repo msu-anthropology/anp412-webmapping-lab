@@ -1,3 +1,5 @@
+## ANP 412 Webmapping (With Leaflet) Lab
+
 In this workshop, we're going to walk through how you load a map into a webpage, how to put a marker on the map, and how you bind a popup to that marker.  We'll be using [Leaflet](https://leafletjs.com/) for the workshop.  
 
 To start off with, open the `basic_html_template.html` file in your code editor of choice (we'll use [Atom](https://atom.io/) for the workshop) - we'll use this as the base for the workshop and build on it as we progress through the various steps.  
