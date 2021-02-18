@@ -20,7 +20,7 @@ This links in the Leaflet stylesheet.
 
 `<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>`
 
-For things to work properly, this block of code **must** below the previous block that linked to the LEaflet CSS file.  
+For things to work properly, this block of code **must** below the previous block that linked to the Leaflet CSS file.  
 
 ### Loading and Displaying the Map in your Webpage
 
