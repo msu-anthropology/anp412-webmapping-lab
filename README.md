@@ -4,7 +4,8 @@ In this workshop, we're going to walk through how you load a map into a webpage,
 
 To start off with, open the `basic_html_template.html` file in your code editor of choice (we'll use [Atom](https://atom.io/) for the workshop) - we'll use this as the base for the workshop and build on it as we progress through the various steps.  
 
-<p class="callout info">How do you download the files this tutorial is asking you to work with?</p>
+> This is a callout box, it gets a fancy little box and border.
+> Use it to draw attention to some interesting content.
 
 ### Linking to the Leaflet Javascript Library Files
 
