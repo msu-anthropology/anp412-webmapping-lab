@@ -16,7 +16,7 @@ The first thing we need to do is point to the Leaflet CSS file and the Leaflet J
 
 This links in the Leaflet stylesheet.  
 
-2\. Now to link in the javascript library itself.  This is where all of the "code" is that you need to display and manipulate the map in the webpage.  In the <head> section of the basic_html_template.html document (below the `<title>`, enter:
+2\. Now to link in the javascript library itself.  This is where all of the "code" is that you need to display and manipulate the map in the webpage.  In the <head> section of the `basic_html_template.html` document (below the `<title>`, enter:
 
 `<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>`
 
@@ -36,7 +36,7 @@ This sets the dimentions of the map you are going to display (it isn't the actua
 
 `<div id="mysupermap"></div>`
 
-Wherever you put this (in the `<body>`section) is where your map will display.  The `id="mysupermap"` portion of this links to the size you set earlier for your map (which, in this case, we called `mysupermap`).  If you called your map anything else, you'll put its actual name nere instead of `mysupermap`.  
+Wherever you put this (in the `<body>` section) is where your map will display.  The `id="mysupermap"` portion of this links to the size you set earlier for your map (which, in this case, we called `mysupermap`).  If you called your map anything else, you'll put its actual name nere instead of `mysupermap`.  
 
 3\.  Now its time to initialize the map (which basically means we need to turn it on).  Tho do this, we will need to write some javascript.  The javascript we're writing is actually executing commands that are contained in the Leaflet javacript mapping library we linked to above.  In the `<script>` section of the `basic_html_template.html`, enter:
 
@@ -67,7 +67,7 @@ This adds the tile and data attributions that appear in the lower right hand cor
 
 `id: 'mapbox/streets-v11'`
 
-This sets the specific map tile style.  What goes here will varry from provider to provider.  **Read the provider's docuentation.**
+This sets the specific map tile style.  What goes here will varry from provider to provider.  **Read the provider's documentation.**
 
 8\. **Below** this, enter:
 
@@ -79,17 +79,17 @@ At this point, your map should load in the browser.  It won't have anything on i
 
 ### Adding a Marker to your Map
 
-Once you've got your map displaying properly, adding a marker is actullay failry easy (really only one step).  
+Once you've got your map displaying properly, adding a marker is actullay fairly easy (really only one step).  
 
-1\. **Below** the block of code you closed out in step 8 above (in the `<script>` section, enter:
+1\. **Below** the block of code you closed out in step 8 above (in the `<script>` section), enter:
 
 `var marker = L.marker([51.494417, -0.223022]).addTo(map);` 
 
-This is some javascript that tells the browser to create a marker and add it to the map at the coordinates (in lat and long) between the square brackets.  The syntax for the lat/long is identical to the syntax you used to decide the location where the map would initiailly load.  In this case, we're used `51.494417, -0.223022`, but you can use absolutley anything you want.  One thing to remember is that if the initial load locatio for the map is different from where you are loading the marker, the user won't be able to see the marker, they'll have to pan/zoom around to find it.  
+This is some javascript that tells the browser to create a marker and add it to the map at the coordinates (in lat and long) between the square brackets.  The syntax for the lat/long is identical to the syntax you used to decide the location where the map would initiailly load.  In this case, we've used `51.494417, -0.223022`, but you can use absolutley anything you want.  One thing to remember is that if the initial load location for the map is different from where you are loading the marker, the user won't be able to see the marker, they'll have to zoom out/pan around to find it.  
 
 ### Adding a Popup to the Marker
 
-Say you want a little pop-uo to open when the user clicks on the marker you've added to provide some information about that location.  How do you do that?  Its actually quite simple - just one single line of Javascript.  
+Say you want a little pop-up to open when the user clicks on the marker you've added, to provide some information about that location.  How do you do that?  Its actually quite simple - just one single line of Javascript.  
 
 1\. **Below** the line of code you added in the previous section, enter:
 
@@ -111,18 +111,18 @@ At this point, your page should load a map (in a specific location and a specifi
 
 Fom here, you can try:
 
-* Loading in different tiles.  Have a look at `basic_leaflet_stamen_tiles.html` or `basic_leaflet_osm_tiles.html` for some examples
-* Placing more than one marker on the map.  Have a look at `basic_leaflet_multiple_pins.html` for an example
-* Bind pop ups to multiple markers.  Have a look at `basic_leaflet_multiple_pins_and_popups.html` for an example
-* Make the map fullscreen. Have a look at `fullscreen_leaflet.html` for an example
+* Loading in different tiles.  Have a look at `basic_leaflet_stamen_tiles.html` or `basic_leaflet_osm_tiles.html` for some examples.
+* Placing more than one marker on the map.  Have a look at `basic_leaflet_multiple_pins.html` for an example.
+* Bind pop ups to multiple markers.  Have a look at `basic_leaflet_multiple_pins_and_popups.html` for an example.
+* Make the map fullscreen. Have a look at `fullscreen_leaflet.html` for an example.
 * Make the fullscreen map edge to edge in the browser.  Have a look at `edge_to_edge_leaflet.html` for an example.  
 
 ### Some Helpful Resources
 
-There are lots of grest reseources out there for learning Leaflet (or doing more than we've covered in this lab):
+There are lots of grest resources out there for learning Leaflet (or doing more than we've covered in this lab):
 
 * Leflet itself ahs some pretty good tutorials: [https://leafletjs.com/examples.html](https://leafletjs.com/examples.html)
-* Joshua Frazier's Leaflet tutorial (covers some of the same things we looked at, but goes a little further) [https://joshuafrazier.info/leaflet-basics/](https://joshuafrazier.info/leaflet-basics/)
+* Joshua Frazier's Leaflet tutorial (covers some of the same things we looked at, but goes a little further): [https://joshuafrazier.info/leaflet-basics/](https://joshuafrazier.info/leaflet-basics/)
 * [Leaflet Tutorial](https://maptimeboston.github.io/leaflet-intro/), written for Maptime Boston by Andy Woodruff and Ryan Mullins that gets into some more advanced techniques such as incorporating jQuery, external geojson files and the Leaflet.markercluster plugin into a project.
 * [Leaflet.JS Introduction](https://luxembourgjs.github.io/leaflet-demo/#/), by Thierry Nicola for JS Luxembourg.
 * [Leaflet provider map](https://leaflet-extras.github.io/leaflet-providers/preview/index.html), an open source Leaflet extension that contains configurations for various free tile providers.
