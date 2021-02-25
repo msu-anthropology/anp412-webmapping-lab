@@ -12,13 +12,17 @@ The first thing we need to do is point to the Leaflet CSS file and the Leaflet J
 
 1\. In the `<head>` section of the `basic_html_template.html` document (below the `<title>`, enter:
 
-`<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/>`
+`<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>`
 
 This links in the Leaflet stylesheet.  
 
-2\. Now to link in the javascript library itself.  This is where all of the "code" is that you need to display and manipulate the map in the webpage.  In the <head> section of the `basic_html_template.html` document (below the `<title>`, enter:
+2\. Now to link in the javascript library itself.  This is where all of the "code" is that you need to display and manipulate the map in the webpage.  In the <head> section of the `basic_html_template.html` document (below the `<title>` *and* below the CSS link you added above, enter:
 
-`<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>`
+` <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>`
 
 For things to work properly, this block of code **must** below the previous block that linked to the Leaflet CSS file.  
 
