@@ -38,7 +38,7 @@ From here, you are ready to load and display the map in your page.  The process 
 
 This sets the dimentions of the map you are going to display (it isn't the actual map...think of this as creating the canvas where you map will be displayed...the actual map will come in the next step).  A couple of important things here. First, `mysupermap` is just a silly name I've given for the map I'm going to display later.  Each map you display has to have a unique name - anything you want.  You'll have to use that name several times later in this workshop.  Second, the `#` is not part of the map name.  No matter what you name your map here, you will always have a `#` before it.  Thirdly, the stuff within the curly brackets determines the height and width (in pixels) of the map.  You can enter any value you want - making the map either larger or smaller.  
 
-2\. From here you are going to tell the webpage where you want the map to be displayed.  Enter the following in the `<body>` section of the `basic_html_template.html` file.  
+2\. From here you are going to tell the webpage where you want the map to be displayed.  Enter the following in the `<body>` section of the `basic_html_template.html` file (but not in the `<script>` section).  
 
 `<div id="mysupermap"></div>`
 
