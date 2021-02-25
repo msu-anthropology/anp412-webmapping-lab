@@ -54,7 +54,7 @@ This does a couple of things.  First, it initializes the map (turns it on).  Mak
 
 `L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {`
 
-Depending on the tile provider you are using, you'll have to enter a unique access token string.  As we've discussed, this is a unique indentifier (think of it as a password) that you get when you sign up for an account with the tile provider. The access token is passed to the tile provider's API (remember, you are making an API call to get the map tiles).
+Depending on the tile provider you are using, you'll have to enter a unique access token string.  As we've discussed, this is a unique indentifier (think of it as a password) that you get when you sign up for an account with the tile provider. The access token is passed to the tile provider's API (remember, you are making an API call to get the map tiles). In this example, everything that comes after `access_token=` is the token.  As part of this tutorial, I've provided the code with the token.  If you are planning on building your own webmap (and not just following along with this tutorial), you'll need to get your own token.  
 
 5\. **Below** this, enter:
 
