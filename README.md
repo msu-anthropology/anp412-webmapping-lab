@@ -93,9 +93,11 @@ Once you've got your map displaying properly, adding a marker is actullay fairly
 
 This is some javascript that tells the browser to create a marker and add it to the map at the coordinates (in lat and long) between the square brackets.  The syntax for the lat/long is identical to the syntax you used to decide the location where the map would initiailly load.  In this case, we've used `51.494417, -0.223022`, but you can use absolutley anything you want.  One thing to remember is that if the initial load location for the map is different from where you are loading the marker, the user won't be able to see the marker, they'll have to zoom out/pan around to find it.  
 
+To view the your handiwork, just save the `basic_html_template.html` you've been working on and open it up in your browser of choice.  To save yourself a couple of steps, you might consider keeping the `basic_html_template.html` file open in a browser.  That way, you can save the file in Atom whenever you want and just hit refresh on the browser.  This will make the browser display the most recent verison of the `basic_html_template.html` file you just saved.  
+
 ### Adding a Popup to the Marker
 
-Say you want a little pop-up to open when the user clicks on the marker you've added, to provide some information about that location.  How do you do that?  Its actually quite simple - just one single line of Javascript.  
+Say you want a little pop-up to open when the user clicks on the marker you've added, to provide some information about that location, for instance.  How do you do that?  Its actually quite simple - just one single line of Javascript.  
 
 1\. **Below** the line of code you added in the previous section, enter:
 
