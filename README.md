@@ -1,10 +1,10 @@
 ## ANP 412 Webmapping (With Leaflet) Lab
 
-In this workshop, we're going to walk through how you load a map into a webpage, how to put a marker on the map, and how you bind a popup to that marker.  We'll be using [Leaflet](https://leafletjs.com/) for the workshop.  
+In this workshop, we're going to walk through how you load a map into a webpage, how to put a marker on the map, and how you bind a popup to that marker.  We'll be using [Leaflet](https://leafletjs.com/) (one of the most popular and widely used javascript mapping libraries) for the workshop.  
 
-To start off with, open the `basic_html_template.html` file in your code editor of choice (we'll use [Atom](https://atom.io/) for the workshop) - we'll use this as the base for the workshop and build on it as we progress through the various steps.  
+To start off with, open the `basic_html_template.html` file in your code editor of choice (we'll use [Atom](https://atom.io/) for the workshop) - we'll use this file as the base for the workshop and build on it as we progress through the various steps.  
 
-> How do you download the files that this tutorial is working with?  The easiest way (if you aren't already familiar with Github is just to click the big green download Code button above and choose the Download Zip option.  This will download all of the files you'll be working with (as well as all of the other supplementary examples files.  After you download it, unzip the folder and stick it somewhere safe and obvious on your computer - your desktop is probably the best.  
+> How do you download the files that this tutorial is working with?  The easiest way (if you aren't already familiar with Github is just to click the big green download Code button above and choose the Download Zip option.  This will download the file you'll be working with (as well as all of the other supplementary examples files).  After you download it, unzip the folder and stick it somewhere safe and obvious on your computer - your desktop is probably the best.  
 
 ### Linking to the Leaflet Javascript Library Files
 
