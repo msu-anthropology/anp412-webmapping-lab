@@ -10,23 +10,23 @@ Make sure you save the `basic_html_template.html` in Atom after every step (just
 
 ### Linking to the Leaflet Javascript Library Files
 
-The first thing we need to do is point to the Leaflet CSS file and the Leaflet Javascript file.  This is basically telling the webpage where it will need to look for the Javascript it will be executing.  
+The first thing we need to do is point to the Leaflet CSS file and the Leaflet Javascript file.  This is basically telling the webpage where it will need to look for the Javascript and CSS it will be executing.  
 
 1\. In the `<head>` section of the `basic_html_template.html` document (below the `<title>`, enter:
 
-`<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-   crossorigin=""/>`
+`<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>`
 
 This links in the Leaflet stylesheet.  
 
 2\. Now to link in the javascript library itself.  This is where all of the "code" is that you need to display and manipulate the map in the webpage.  In the <head> section of the `basic_html_template.html` document (below the `<title>` *and* below the CSS link you added above, enter:
 
-` <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-   crossorigin=""></script>`
+` <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>`
 
-For things to work properly, this block of code **must** below the previous block that linked to the Leaflet CSS file.  
+For things to work properly, this block of code **must** be below the previous block that linked to the Leaflet CSS file.  
 
 ### Loading and Displaying the Map in your Webpage
 
@@ -50,11 +50,9 @@ Wherever you put this (in the `<body>` section) is where your map will display. 
 
 This does a couple of things.  First, it initializes the map (turns it on).  Make sure you enter the correct map name you set earlier.  Second, it sets the location (in longitude and lattitude) for where the map will initiailly load up.  These are the two numbers in the `setView` section between the square brackets (in this case, `51.4829377,-0.2420245`).  You can choose any location you want.  The number (in this case `12` after the lat/long) sets the map's zoom level.  Basically, how close or how far away the map is zoomed when it is originally loaded.  The higher the number, the closer in the map is zoomed.  The lower the number, the further out it is zoomed. Experiment with the zoom value.  
 
-4\. Now you need to tell the webpage which map tiles to display (and how to display them).  There are lots of options (as we've discussed).  In the case of this workshop, we're going to use Mapbox's streettile set.  Enter the following **below** the code you entered in the previosu step.  If you don't put it below. the map won't display:
+4\. Now you need to tell the webpage which map tiles to display (and how to display them).  There are lots of options (as we've discussed).  In the case of this workshop, we're going to use the OpenStreetMap tile set.  Enter the following **below** the code you entered in the previosu step.  If you don't put it below. the map won't display:
 
-`L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {`
-
-Depending on the tile provider you are using, you'll have to enter a unique access token string.  As we've discussed, this is a unique indentifier (think of it as a password) that you get when you sign up for an account with the tile provider. The access token is passed to the tile provider's API (remember, you are making an API call to get the map tiles). In this example, everything that comes after `access_token=` is the token.  As part of this tutorial, I've provided the code with the token.  If you are planning on building your own webmap (and not just following along with this tutorial), you'll need to get your own token.  
+`L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {`
 
 5\. **Below** this, enter:
 
@@ -64,18 +62,11 @@ This sets the maximum amount the map can zoom in.  The higher the number, the mo
 
 6\.  **Below** this, enter:
 
-`attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',` 
+`attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'` 
 			
 This adds the tile and data attributions that appear in the lower right hand corner of the map container.  Each tile provider has different requirements for attribution.  You can figure out what you need to enter by reading the tile provider's documentation.  Follow the requirements for attribution.  **Don't skip this**
 
 7\. **Below** this, enter:
-
-`id: 'mapbox/streets-v11'`
-
-This sets the specific map tile style.  What goes here will varry from provider to provider.  **Read the provider's documentation.**
-
-8\. **Below** this, enter:
 
 `}).addTo(map);`
 
@@ -87,7 +78,7 @@ At this point, your map should open the `basic_html_template.html` file you've b
 
 Once you've got your map displaying properly, adding a marker is actullay fairly easy (really only one step).  
 
-1\. **Below** the block of code you closed out in step 8 above (in the `<script>` section), enter:
+1\. **Below** the block of code you closed out in step 7 above (in the `<script>` section), enter:
 
 `var marker = L.marker([51.494417, -0.223022]).addTo(map);` 
 
@@ -119,7 +110,7 @@ At this point, your page should load a map (in a specific location and a specifi
 
 Fom here, you can try:
 
-* Loading in different tiles.  Have a look at `basic_leaflet_stamen_tiles.html` or `basic_leaflet_osm_tiles.html` for some examples.
+* Loading in different tiles.  Have a look at `basic_leaflet_stamen_tiles.html` for an example.
 * Placing more than one marker on the map.  Have a look at `basic_leaflet_multiple_pins.html` for an example.
 * Bind pop ups to multiple markers.  Have a look at `basic_leaflet_multiple_pins_and_popups.html` for an example.
 * Make the map fullscreen. Have a look at `fullscreen_leaflet.html` for an example.
