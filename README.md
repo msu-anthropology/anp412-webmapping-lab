@@ -8,7 +8,7 @@ To start off with, open the `basic_html_template.html` file in your code editor 
 
 > How do you download the files that this tutorial is working with?  The easiest way (if you aren't already familiar with Github is just to click the big green download Code button above and choose the Download Zip option.  This will download the file you'll be working with (as well as all of the other supplementary examples files).  After you download it, unzip the folder and stick it somewhere safe and obvious on your computer - your desktop is probably the best.  
 > 
-Make sure you save the `basic_html_template.html` in Atom after every step (just in case) 
+Make sure you save the `basic_html_template.html` after every step (just in case).  You might also resave the file using a different filename - `basic_html_template_lastname.html` for example.
 
 ### Linking to the Leaflet Javascript Library Files
 
