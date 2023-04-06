@@ -105,12 +105,12 @@ Do you want the pop up to open automatically when the user loads the page?  That
 `marker.bindPopup("<b><center>Hammersmith</center></b>I'm an awesome neighborhood.").openPopup();`
 
 Everything is the same, except you've added the `.openPopup()` command at the end.  This basically tells the browser "hey, when the user loads the page, automatically open the pop up."
+	
+Thats it, you're done.  Congratulations, you just created a simmpl little webmap with a pin and an interactive pop up.  Pay yourself on the back and submit the file that you created (should just be one .html file).  
 
 ### Next Steps and Going Further
 
-At this point, your page should load a map (in a specific location and a specific level of zoom) that has one marker on it.  When the user clicks the marker, a little pop up should open.  
-
-Fom here, you can try:
+Want to go a little further?   Fom here, you can try:
 
 * Loading in different tiles.  Have a look at `basic_leaflet_stamen_tiles.html` for an example.
 * Placing more than one marker on the map.  Have a look at `basic_leaflet_multiple_pins.html` for an example.
