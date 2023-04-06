@@ -4,7 +4,7 @@ In this workshop, we're going to walk through how you load a map into a webpage,
 
 To start off with, open the `basic_html_template.html` file in your code editor of choice (we'll use [Atom](https://atom.io/) for the workshop) - we'll use this file as the base for the workshop and build on it as we progress through the various steps.  
 
-*please note* - Atom has been mostly discontinued (though, you can still download it).  If you want to use another code editor, try [VSCode](https://code.visualstudio.com/).
+*please note* - Atom has been mostly discontinued (though, you can still download it).  If you want to use another code editor, try [VSCode](https://code.visualstudio.com/). Alternative, there are a bunch of great (free) code editors (both Mac and PC) listed on the [Resources](https://anthropology.msu.edu/anp412-ss23/resources/) page on the course website.  
 
 > How do you download the files that this tutorial is working with?  The easiest way (if you aren't already familiar with Github is just to click the big green download Code button above and choose the Download Zip option.  This will download the file you'll be working with (as well as all of the other supplementary examples files).  After you download it, unzip the folder and stick it somewhere safe and obvious on your computer - your desktop is probably the best.  
 > 
