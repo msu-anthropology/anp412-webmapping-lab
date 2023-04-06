@@ -74,7 +74,7 @@ This adds the tile and data attributions that appear in the lower right hand cor
 
 This esentially closees out the Javasript command you started in step 4.  
 
-At this point, your map should open the `basic_html_template.html` file you've been working on in your browser. If you've done everything correctly, you should see a map of London.  You should be able to zoom in, zoom out, and pan the map.  Congratulations!  You've successfully created a webpage that displays an interactive webmap.  
+At this point, open the `basic_html_template.html` file you've been working on in your browser. If you've done everything correctly, you should see a map of London.  You should be able to zoom in, zoom out, and pan the map.  Congratulations!  You've successfully created a webpage that displays an interactive webmap.  
 
 ### Adding a Marker to your Map
 
