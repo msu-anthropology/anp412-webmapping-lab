@@ -104,7 +104,7 @@ Do you want the pop up to open automatically when the user loads the page?  That
 
 Everything is the same, except you've added the `.openPopup()` command at the end.  This basically tells the browser "hey, when the user loads the page, automatically open the pop up."
 	
-Thats it, you're done.  Congratulations, you just created a simmpl little webmap with a pin and an interactive pop up.  Pay yourself on the back and submit the file that you created (should just be one .html file).  
+Thats it, you're done.  Congratulations, you just created a simple little webmap with a pin and an interactive pop up.  Pay yourself on the back and submit the file that you created (should just be one .html file).  
 
 ### Next Steps and Going Further
 
