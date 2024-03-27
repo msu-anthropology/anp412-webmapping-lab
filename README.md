@@ -124,4 +124,4 @@ There are lots of grest resources out there for learning Leaflet (or doing more 
 * [Leaflet Tutorial](https://maptimeboston.github.io/leaflet-intro/), written for Maptime Boston by Andy Woodruff and Ryan Mullins that gets into some more advanced techniques such as incorporating jQuery, external geojson files and the Leaflet.markercluster plugin into a project.
 * [Leaflet.JS Introduction](https://luxembourgjs.github.io/leaflet-demo/#/), by Thierry Nicola for JS Luxembourg.
 * [Leaflet provider map](https://leaflet-extras.github.io/leaflet-providers/preview/index.html), an open source Leaflet extension that contains configurations for various free tile providers.
-* [Mapbox Guides](https://docs.mapbox.com/help/) and [examples](https://docs.mapbox.com/mapbox.js/example/v1.0.0/) are great for learning about web maps in general in addition to Mapbox.js, which is built on top of Leaflet.
+* [Mapbox Guides](https://docs.mapbox.com/help/) and [examples](hhttps://docs.mapbox.com/mapbox-gl-js/example/) are great for learning about web maps in general in addition to Mapbox.js, which is built on top of Leaflet.
