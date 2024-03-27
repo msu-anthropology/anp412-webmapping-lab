@@ -110,7 +110,6 @@ Thats it, you're done.  Congratulations, you just created a simmpl little webmap
 
 Want to go a little further?   Fom here, you can try:
 
-* Loading in different tiles.  Have a look at `basic_leaflet_stamen_tiles.html` for an example.
 * Placing more than one marker on the map.  Have a look at `basic_leaflet_multiple_pins.html` for an example.
 * Bind pop ups to multiple markers.  Have a look at `basic_leaflet_multiple_pins_and_popups.html` for an example.
 * Make the map fullscreen. Have a look at `fullscreen_leaflet.html` for an example.
